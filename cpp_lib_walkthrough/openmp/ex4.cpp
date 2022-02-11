@@ -3,12 +3,12 @@
 #include <cstdlib>
 #include "omp.h"
 using namespace std;
-#define NUM_THREADS 4
+#define NUM_THREADS 16
 
 int main(){
   // set to 4 threads
   int i;
-  long num_steps = 1000000;
+  long num_steps = 100000000;
   double x, pi, sum = 0.0;
   double step = 1.0/(double) num_steps;
 
